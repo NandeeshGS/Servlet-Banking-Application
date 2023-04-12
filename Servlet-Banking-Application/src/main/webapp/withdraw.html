@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Withdraw</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: grey;
+    }
+    
+    form {
+      margin: 20px auto;
+      width: 400px;
+      padding: 20px;
+      border: 1px solid ;
+      border-radius: 5px;
+      background-color: white;
+    }
+    
+    input[type=text] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid ;
+      width: 100%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      padding: 10px;
+      background-color:green;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform.2s;
+    }
+    
+    button[type=reset] {
+      background-color: lightblue;
+    }
+    
+    button[type=submit]:hover {
+      background-color: darkgreen;
+      transform:scale(1.2);
+    }
+    
+    button[type=reset]:hover {
+      background-color: red;
+      transform:scale(1.2);
+    }
+    
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: green;
+    }
+    
+    button, a {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="withdraw">
+    <h1>Withdraw</h1>
+    <label for="amt">Enter amount:</label>
+    <input type="text" name="amt" placeholder="Enter Amount" required="required"><br>
+    <button type="reset">Cancel</button>
+    <button type="submit">Withdraw</button>
+  </form>
+  <br><br><center>
+  <a href="AccountHome.jsp"><button type="submit">Back</button></a></center>
+</body>
+</html>

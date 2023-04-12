@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>Deposit</title>
+    <style>
+      /* CSS Styles */
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: grey;
+    }
+
+      form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid ;
+        align-items: center;
+        border-radius: 5px;
+        width: 400px;
+        background-color: lightblue;
+      }
+
+      input[type="text"] {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid ;
+        width: 100%;
+      }
+
+      button[type="reset"], button[type="submit"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+        cursor: pointer;
+        transition:transform.2s;
+      }
+
+      button[type="reset"] {
+        background-color: red;
+        color: white;
+      }
+
+      button[type="submit"] {
+        background-color: green;
+        color: white;
+      }
+
+      button[type="reset"]:hover, button[type="submit"]:hover {
+        opacity: 0.8;
+        transform:scale(1.1);
+      }
+
+      a {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body><center>
+    <form action="deposit">
+      <h1>Deposit</h1>
+      <label for="amt">Enter Amount:
+      <input type="text" name="amt" placeholder="Enter Amount" required="required"></label>
+      <button type="reset">Cancel</button><br><button type="submit">Deposit</button>
+      
+    </form></center>
+    <a href="AccountHome.jsp"><button type="submit">Back</button></a>
+  </body>
+</html>
